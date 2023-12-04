@@ -1,6 +1,6 @@
 name: "Homegear"
 description: "Homegear as Homeassistant Addon"
-version: "1.1.1"
+version: "1.1.2"
 slug: "homegear"
 url: "https://github.com/home-assistant/addons-example/tree/main/example"
 init: false
@@ -12,19 +12,7 @@ arch:
   - i386
 startup: services
 ports:
-  8000/tcp: 8000
+  2001/tcp: 2001
 map:
   - share:rw
   - config:rw
-options:
-  beer: true
-  wine: true
-  liquor: false
-  name: "world"
-  year: 2017
-schema:
-  beer: bool
-  wine: bool
-  liquor: bool
-  name: str
-  year: int
