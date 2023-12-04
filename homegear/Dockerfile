@@ -1,8 +1,12 @@
 ARG BUILD_FROM
+ARG BUILD_ARCH
 FROM $BUILD_FROM
 
 # Install requirements for add-on
 RUN apt-get update && apt-get -y install apt-transport-https wget ca-certificates apt-utils gnupg libzip4 libavahi-client3 libavahi-client-dev insserv locales lsb-release
+
+ENV architecture=${BUILD_ARCH}
+
 RUN \
     touch /tmp/HOMEGEAR_STATIC_INSTALLATION; \
     touch /.dockerenv; \
