@@ -1,0 +1,29 @@
+name: "Homegear"
+description: "Homegear as Home Assistant Addon"
+version: "1.1.1"
+slug: "homegear"
+url: "https://github.com/FloMeyer/hassio-addons/tree/main/homegear"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+ports:
+  8000/tcp: 8000
+map:
+  - share:rw
+options:
+  beer: true
+  wine: true
+  liquor: false
+  name: "world"
+  year: 2017
+schema:
+  beer: bool
+  wine: bool
+  liquor: bool
+  name: str
+  year: int
