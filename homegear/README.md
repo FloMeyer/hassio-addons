@@ -1,4 +1,4 @@
-# Home Assistant Add-on: Homegear add-on
+# Home Assistant Add-on: Homegear
 
 _Homegear as Home Assistant add-on._
 
