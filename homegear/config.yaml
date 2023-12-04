@@ -1,8 +1,8 @@
 name: "Homegear"
-description: "Homegear as Home Assistant Addon"
+description: "Homegear as Homeassistant Addon"
 version: "1.1.1"
 slug: "homegear"
-url: "https://github.com/FloMeyer/hassio-addons/tree/main/homegear"
+url: "https://github.com/home-assistant/addons-example/tree/main/example"
 init: false
 arch:
   - aarch64
@@ -15,6 +15,7 @@ ports:
   8000/tcp: 8000
 map:
   - share:rw
+  - config:rw
 options:
   beer: true
   wine: true
