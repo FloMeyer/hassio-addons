@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 1.1.3
+
+- bugfix
+
 ## 1.1.2
 
 - Switch to Debian bullseye
